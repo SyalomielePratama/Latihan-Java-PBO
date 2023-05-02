@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class KelasUtama {
+        public static void main(String[] args) {
+            int varInteger;
+            int varJari;
+            
+            sayHello();
+            sayHelloTo("Budi"); 
+            String namaMahasiswa = "George";
+            sayHelloTo(namaMahasiswa);
+
+            System.out.println("Masukkan Nilai varInteger: ");
+            varInteger = inputNilaiInteger("var Integer");
+            System.out.println("Masukkan Nilai Jari Jari Lingkaran :");
+            varJari = hitungLuasLingkaran("Jari Jari Lingkaran :");
+            System.out.println("Nilai varInteger sekarang = "+ varInteger);
+            System.out.println("Nilai Luas Lingkaran Adalah = "+ varJari);
+            }
+        
+static void sayHello(){
+ System.out.println("Hello, ini dari metode bertipe void, tanpa parameter");
+}
+            
+static void sayHelloTo(String nama){
+    System.out.println("Hello "+ nama + ", Metode bertipe void, dengan parameter");
+}
+
+static int inputNilaiInteger(String namaVariabel){
+    Scanner inputScanner = new Scanner(System.in);
+    int nilaiInput;
+    System.out.println("Silakan input nilai untuk variabel "+
+    namaVariabel);
+    nilaiInput = inputScanner.nextInt();
+    return nilaiInput;
+    }
+static int hitungLuasLingkaran(String namaVariabel){
+    Scanner inputScanner = new Scanner(System.in);
+    double jariLingkaran;
+    System.out.println("Silakan input nilai "+
+    namaVariabel);
+    jariLingkaran = inputScanner.nextDouble();
+    double hasil = jariLingkaran * jariLingkaran *22/7;
+    return (int) hasil;
+    }
+
+}
