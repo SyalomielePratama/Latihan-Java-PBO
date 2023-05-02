@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class LatihanLagi {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int age;
+        System.out.print("Berapa Umur Anda ? : ");
+        age = keyboard.nextInt();
+        System.out.println("Umur Anda: ");
+            if (age < 13) {
+            System.out.println("Anda Terlalu Muda");
+            }
+            if (age < 16) {
+            System.out.println("Belum Cukup Umur ");
+            }
+            if (age <= 18) {
+            System.out.println("Belum Memenuhi Syarat");
+            }
+            if (age < 35) {
+            System.out.println("Anda Sudah Tua");
+            if (age >= 50) {
+            System.out.println("Anda sudah setengah baya, hati-hati dengan kulineran");
+            }
+            System.out.println("Mengerikan");
+            }
+}
+}
