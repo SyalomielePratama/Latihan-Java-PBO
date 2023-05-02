@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class UlangTahun {
+    public static void main(String [] args){
+        int usia;
+        selamatUlangTahun();
+        namaSaudara("Tama","Susanto"); 
+        String namaBelakang = " Susanto";
+        usia = usiaSaudara("");
+        System.out.println("yang Telah Berumur : "+usia);
+        }
+    static void selamatUlangTahun(){
+        System.out.println("Selamat Ulang Tahun ");
+    }
+    static void namaSaudara(String nama, String namaBelakang){
+         System.out.println("Kepada Saudara : "+nama + namaBelakang);
+    }
+    static int usiaSaudara(String usia){
+        Scanner inputScanner = new Scanner(System.in);
+        int umur;
+        System.out.println("Berumur Berapa ?: "+usia);
+        umur = inputScanner.nextInt();
+        return umur;
+        
+        
+    }
+}
