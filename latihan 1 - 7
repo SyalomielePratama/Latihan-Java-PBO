@@ -202,3 +202,20 @@ public class LatihanLima {
 }
 
 
+
+package javaapplication6;
+import java.util.Scanner;
+public class JavaApplication6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int angka;
+
+        do {
+            System.out.print("Masukkan angka (0 untuk keluar): ");
+            angka = scanner.nextInt();
+            System.out.println("Anda memasukkan angka: " + angka);
+        } while (angka != 0);
+
+        System.out.println("Program selesai.");
+    }
+}
