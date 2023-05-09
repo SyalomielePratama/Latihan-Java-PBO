@@ -1,0 +1,204 @@
+import java.util.Scanner;
+public class LatihanSatu {
+    public static void main (String [] args){
+        Scanner keyboard = new Scanner(System.in);
+        int age;
+        System.out.print("Berapa Umur Anda : ");
+        age = keyboard.nextInt();
+        System.out.println("Umur Anda : ");
+        if (age < 13) {
+        System.out.println("Masih Bocil");
+        }
+        if (age < 16) {
+        System.out.println("Masih Bocah");
+        }
+        if (age <= 18) {
+        System.out.println("Cari Kerja Jangan Main FB aja");
+        }
+
+        if (age < 35) {
+        System.out.println("Ingat Umur Broo");
+        System.out.println("Ngenes");
+        }
+        
+        if (age >=50) {
+        System.out.println("Anda sudah setengah baya, hati-hati dengan kulineran");
+        System.out.println("Ngenes");
+        }
+}
+}
+
+
+
+
+
+import java.util.Scanner;
+public class LatihanDua {
+    public static void main (String[] args){
+        int variabel1 = inputNilaiInteger("variabel1");
+        int batasBawah = inputNilaiInteger("batasBawah");
+        int batasAtas = inputNilaiInteger("batasAtas");
+        if (variabel1 < batasBawah) {
+        System.out.println("Variabel1 = "+ variabel1 + "kurang dari batasBawah yang bernilai "+ batasBawah );
+        }
+        if ((variabel1 < batasBawah) && (variabel1 < batasAtas)) {
+        System.out.println("Variabel1 = "+ variabel1 + "kurang dari batasBawah yang bernilai "+ batasBawah +" dan kurang dari batasAtas juga yang bernilai: " + batasAtas);
+        }
+        if (variabel1 <= batasBawah || variabel1 >= batasAtas) {
+        System.out.println("Variabel 1 nilainya tidak berada di antara batasBawah dan batasAtas");
+        }
+        if (variabel1 >= batasBawah || variabel1 <= batasAtas) {
+        System.out.println("Variabel1 berada di antara nilai batasBawah dan batasAtas.");
+        }
+
+        }
+        static int inputNilaiInteger(String namaVariabel){
+        Scanner inputScanner = new Scanner(System.in);
+        int nilaiInput;
+        System.out.println("Silakan input nilai untuk variabel "+ namaVariabel);
+        nilaiInput = inputScanner.nextInt();
+        return nilaiInput;
+}
+}
+
+
+
+
+
+
+public class LatihanTiga {
+    public static void main ( String[] args){
+        int orang = 30;
+        int mobil = 40;
+        int bis = 15;
+        if ( mobil > orang )
+        {
+        System.out.println( "Terlalu Banyak Mobil" );
+        }
+        else if ( mobil < orang )
+        {
+        System.out.println( "Terlalu Banyak Orang" );
+        }
+        else
+        {
+        System.out.println( "Tidak Dapat Diputuskan" );
+         }
+        if ( bis > mobil )
+        {
+        System.out.println( "Terlalu Banyak Bis" );
+        }
+        else if ( bis < mobil )
+        {
+        System.out.println( "Mungkin Hanya Menggunakan Mobil" );
+        }
+        else
+        {
+        System.out.println( "Tidak Dapat Diputuskan" );
+        }
+        if ( orang > bis )
+        {
+        System.out.println( "Gunakan Bis" );
+        }
+        else
+        {
+        System.out.println( "Dirumah saja" );
+        }
+}
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class LatihanEmpat {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int hari;
+        hari = input.nextInt();
+        switch (hari) {
+        case 1:
+        System.out.println("Monday");
+        break;
+        case 2:
+        System.out.println("Tuesday");
+        break;
+        case 3:
+        System.out.println("Wednesday");
+        break;
+        case 4:
+        System.out.println("Thursday");
+        break;
+        case 5:
+        System.out.println("Friday");
+        break;
+        case 6:
+        System.out.println("Saturday");
+        break;
+        case 7:
+        System.out.println("Sunday");
+        break;
+        
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class LatihanLima {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        Scanner jawab = new Scanner(System.in);
+        int hari;
+        System.out.println("Masukkan Hari ke berapa:");
+        hari = input.nextInt();
+        
+        switch (hari) {
+        case 1:
+        System.out.println("Monday");
+        break;
+        case 2:
+        System.out.println("Tuesday");
+        break;
+        case 3:
+        System.out.println("Wednesday");
+        break;
+        case 4:
+        System.out.println("Thursday");
+        break;
+        case 5:
+        System.out.println("Friday");
+        break;
+        case 6:
+        System.out.println("Saturday");
+        break;
+        case 7:
+        System.out.println("Sunday");
+        break;
+  } 
+        System.out.print("Apakah Anda ingin melanjutkan? (ya/tidak): ");
+        String jawaban = jawab.nextLine();
+
+        if (jawaban.equalsIgnoreCase("ya")) {
+            System.out.println("Anda memilih ya!");
+           
+        } else if (jawaban.equalsIgnoreCase("tidak")) {
+            System.out.println("Anda memilih tidak!");
+           
+        } else {
+            System.out.println("Jawaban tidak valid!");
+            
+ }  
+}
+}
+
+
