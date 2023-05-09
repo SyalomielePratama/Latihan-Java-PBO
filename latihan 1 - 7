@@ -219,3 +219,25 @@ public class JavaApplication6 {
         System.out.println("Program selesai.");
     }
 }
+
+package javaapplication7;
+import java.util.Random;
+import java.util.Scanner;
+public class JavaApplication7 {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println( "Tuliskan pesan di sini, saya akan tampilkanberulang." );
+        System.out.print( "Pesan: " );
+        String message = keyboard.nextLine();
+        Random mesinRandom = new Random();
+        int jumlahPengulangan = 1 + mesinRandom.nextInt(10);
+        System.out.print( "Pesan akan diulang: "+ jumlahPengulangan + " kali\n"
+        );
+        for ( int n = 0 ; n < jumlahPengulangan ; n++ )
+        {
+        System.out.println( n + ". " + message );
+        
+        }
+        }
+        }
