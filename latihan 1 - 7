@@ -220,24 +220,30 @@ public class JavaApplication6 {
     }
 }
 
-package javaapplication7;
 import java.util.Random;
 import java.util.Scanner;
-public class JavaApplication7 {
-    public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
 
-        System.out.println( "Tuliskan pesan di sini, saya akan tampilkanberulang." );
-        System.out.print( "Pesan: " );
-        String message = keyboard.nextLine();
-        Random mesinRandom = new Random();
-        int jumlahPengulangan = 1 + mesinRandom.nextInt(10);
-        System.out.print( "Pesan akan diulang: "+ jumlahPengulangan + " kali\n"
-        );
-        for ( int n = 0 ; n < jumlahPengulangan ; n++ )
-        {
-        System.out.println( n + ". " + message );
-        
+public class SoalTujuh {
+    public static void main(String[] args){
+        try (Scanner scn = new Scanner(System.in)) {
+            Random mesinRandom = new Random();
+                        
+            System.out.print("Tuliskan Pesan: " );
+            String pesan = scn.nextLine();
+
+            int randomNun = mesinRandom.nextInt(20);
+            int pengulangan = 10;
+                
+            if (randomNun > 10){
+                System.out.print( "Bilangan random yang didapat terlalu besar\n");
+                pengulangan = 5;
+            }
+            
+            System.out.print( "Pesan akan diulang: "+ pengulangan + " kali\n");
+            
+            for (int i = 0; i < pengulangan; i++){
+                System.out.print(pesan + "\n");
+            }
         }
-        }
-        }
+    }
+}
